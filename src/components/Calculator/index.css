@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 10rem;
+    width: 500px;
+    height: 500px;
+}
+
+.calc_box {
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #bbb;
+}
+
+.calc_inner {
+    padding: 3rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input1,
+.input2 {
+    padding: 10px;
+    border: 1px solid rgb(72, 65, 62);
+    border-radius: 10px;
+    background: #ffffff;
+    text-align: center;
+    color: rgb(30, 29, 29);
+    font-size: 17px;
+    margin: 5px;
+}
+
+input[type=number]:focus-visible {
+    outline: none;
+    border: 1px solid lightgreen;
+}
+
+.operators_clear {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#operators {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#operators:focus-visible {
+    outline: none;
+}
+
+#operators option {
+    font-size: 20px;
+}
+
+.reset_btn {
+    color: #ffffff;
+    background: red;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+
+.numbers {
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.num_btn {
+    font-size: 20px;
+    padding: 5px 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.results {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.output {
+    padding: 10px;
+    border: 1px solid greenyellow;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    text-align: center;
+    color: rgb(16, 16, 16);
+    font-weight: bold;
+}
+
+.submit_btn {
+    color: #ffffff;
+    background: #0aef0a;
+    padding: 5px 40px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(169, 240, 61);
+    cursor: pointer;
+}
